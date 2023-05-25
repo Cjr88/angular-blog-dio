@@ -1,16 +1,16 @@
 <div class="container__big-card">
   <div class="big-card__picture">
     <img
-    src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2019/11/O-Que-%C3%A9-Angular-Guia-para-Iniciantes.png"
+    src= {{photoCover}}
     alt=""
     >
   </div>
   <div class="big-card__title">
-    <h1><a href="">Projeto Angular no jeitinho brasileiro </a> </h1>
+    <h1><a [routerLink]="['content']"> {{ cardTitle }} </a> </h1>
   </div>
   <div class="big-card__description">
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos tenetur doloribus iure corrupti velit repudiandae, beatae incidunt repellat aliquam officiis odio, quae, eligendi at debitis illo culpa sit alias!
+      {{ cardDescription }}
     </p>
   </div>
 </div>
